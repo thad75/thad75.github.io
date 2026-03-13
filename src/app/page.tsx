@@ -5,29 +5,22 @@ export default function Home() {
   const linkedInPosts = [
     {
       id: 1,
-      date: "March 2025",
-      title: "The Future of LLMs in Enterprise",
-      excerpt: "Sharing my thoughts on how Large Language Models are transforming business operations and what leaders need to know about implementation strategies...",
-      likes: "142",
-      comments: "23",
+      date: "December 2024",
+      title: "🚀 AI R&D Internships at PMU: Computer Vision & LLMs",
+      excerpt: "Hiring 2 talented interns (M1, M2, PhD) for cutting-edge R&D projects: AI-powered equine evaluation optimization and scene analysis. Join us in shaping the future of horse racing with AI!",
+      likes: "63",
+      comments: "1",
+      reposts: "13",
       link: "https://linkedin.com/in/tharsansenthivel"
     },
     {
       id: 2,
-      date: "February 2025",
-      title: "AI Transformation: Beyond the Hype",
-      excerpt: "After leading AI initiatives at PMU, I've learned that successful AI transformation requires more than technology—it demands cultural change...",
-      likes: "287",
-      comments: "45",
-      link: "https://linkedin.com/in/tharsansenthivel"
-    },
-    {
-      id: 3,
-      date: "January 2025",
-      title: "Computer Vision in Production",
-      excerpt: "Lessons learned from deploying CV systems at scale. From edge computing challenges to model drift monitoring...",
-      likes: "198",
-      comments: "31",
+      date: "November 2024",
+      title: "💡 Our Secrets for Powerful Yet Affordable Agentic AI",
+      excerpt: "How we built ComPariDoc with Multi-Agent Collaboration, Deep Research, and Agentic-RAG—all while keeping costs 10x lower using Amazon Nova models instead of premium alternatives.",
+      likes: "72",
+      comments: "8",
+      reposts: "2",
       link: "https://linkedin.com/in/tharsansenthivel"
     }
   ];
@@ -509,6 +502,14 @@ export default function Home() {
                     </svg>
                     {post.comments}
                   </span>
+                  {post.reposts && (
+                    <span className="flex items-center gap-1">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                      </svg>
+                      {post.reposts}
+                    </span>
+                  )}
                 </div>
               </a>
             ))}
