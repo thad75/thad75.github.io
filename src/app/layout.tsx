@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GTM } from "@/components/GTM";
+import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,15 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GTM />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KC5HBL9T"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+        <Analytics />
         {children}
       </body>
     </html>
