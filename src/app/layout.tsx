@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,21 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tharsan Senthivel - Portfolio",
-  description: "Portfolio de Tharsan Senthivel - Développeur web, projets, publications et parcours professionnel.",
-  keywords: ["Tharsan Senthivel", "portfolio", "développeur", "web", "projets", "publications"],
+  title: "Tharsan Senthivel, PhD - Lead AI",
+  description: "AI Executive driving enterprise transformation. Lead AI at PMU, PhD in AI, published researcher. Strategic leadership, AI governance, and measurable business impact.",
+  keywords: ["Tharsan Senthivel", "Lead AI", "AI Strategy", "Executive Leadership", "AI Transformation", "DETR", "Machine Learning"],
   authors: [{ name: "Tharsan Senthivel" }],
   openGraph: {
-    title: "Tharsan Senthivel - Portfolio",
-    description: "Portfolio de Tharsan Senthivel - Développeur web, projets, publications et parcours professionnel.",
+    title: "Tharsan Senthivel, PhD - Lead AI",
+    description: "AI Executive driving enterprise transformation. Lead AI at PMU, PhD in AI, published researcher. Strategic leadership, AI governance, and measurable business impact.",
     type: "website",
     url: "https://thad75.github.io",
     siteName: "Tharsan Senthivel",
   },
   twitter: {
     card: "summary",
-    title: "Tharsan Senthivel - Portfolio",
-    description: "Portfolio de Tharsan Senthivel - Développeur web, projets, publications et parcours professionnel.",
+    title: "Tharsan Senthivel, PhD - Lead AI",
+    description: "AI Executive driving enterprise transformation. Lead AI at PMU, PhD in AI, published researcher.",
   },
   robots: {
     index: true,
@@ -42,13 +43,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head />
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme');
+              const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              if (theme === 'dark' || (!theme && systemDark)) {
+                document.documentElement.classList.add('dark');
+              } else {
+                document.documentElement.classList.add('light');
+              }
+            })();
+          `
+        }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Analytics />
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
