@@ -661,7 +661,7 @@ export default function Home() {
                   <textarea
                     name="message"
                     id="message"
-                    rows="5"
+                    rows={5}
                     required
                     className="w-full px-4 py-3 rounded-xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] placeholder:text-[#8C5A3C]/50 dark:placeholder:text-[#948979]/50 focus:outline-none focus:ring-2 focus:ring-[#C08552] dark:focus:ring-[#948979] transition-all resize-none"
                     placeholder="Tell me about your project..."
