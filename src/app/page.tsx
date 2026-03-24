@@ -7,6 +7,16 @@ export default function Home() {
   const linkedInPosts = [
     {
       id: 1,
+      date: "March 2026",
+      title: "Google Gemini at Work: From Curiosity to Performance Engine",
+      excerpt: "Attended Google Gemini at Work and discovered how Gemini enables moving from curiosity to a true performance engine. Highlights include the 'Speech-to-Speech' keynote demo with near-real-time information capture and R&D acceleration capabilities.",
+      likes: "49",
+      comments: "1",
+      reposts: null,
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7440702431899963392/"
+    },
+    {
+      id: 2,
       date: "December 2024",
       title: "AI R&D Internships at PMU: Computer Vision & LLMs",
       excerpt: "Hiring 2 talented interns (M1, M2, PhD) for cutting-edge R&D projects: AI-powered equine evaluation optimization and scene analysis. Join us in shaping the future of horse racing with AI!",
@@ -16,7 +26,7 @@ export default function Home() {
       link: "https://linkedin.com/in/tharsansenthivel"
     },
     {
-      id: 2,
+      id: 3,
       date: "November 2024",
       title: "Our Secrets for Powerful Yet Affordable Agentic AI",
       excerpt: "How we built ComPariDoc with Multi-Agent Collaboration, Deep Research, and Agentic-RAG—all while keeping costs 10x lower using Amazon Nova models instead of premium alternatives.",
@@ -600,36 +610,92 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6 bg-[#FFF8F0] dark:bg-[#393E46] scroll-reveal">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4B2E2B] dark:text-[#DFD0B8] mb-4">Let's Connect</h2>
-          <p className="text-lg text-[#8C5A3C] dark:text-[#948979] mb-12">
-            Let's discuss how I can help transform your organization with AI.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {[
-              { name: "LinkedIn", href: "https://linkedin.com/in/tharsansenthivel" },
-              { name: "GitHub", href: "https://github.com/thad75" },
-              { name: "Email", href: "mailto:contact@thad75.com" }
-            ].map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] hover:border-[#8C5A3C] dark:hover:border-[#948979] hover:shadow-lg transition-all hover:scale-105"
-              >
-                <span>{social.name}</span>
-              </a>
-            ))}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#4B2E2B] dark:text-[#DFD0B8] mb-4">Let's Connect</h2>
+            <p className="text-lg text-[#8C5A3C] dark:text-[#948979]">
+              Let's discuss how I can help transform your organization with AI.
+            </p>
           </div>
 
-          <a
-            href="mailto:contact@thad75.com"
-            className="inline-block px-10 py-4 bg-[#4B2E2B] dark:bg-[#DFD0B8] text-[#FFF8F0] dark:text-[#222831] rounded-full font-medium hover:opacity-90 transition-all hover:scale-105 text-lg"
-          >
-            Get in touch
-          </a>
+          <div className="grid md:grid-cols-5 gap-8">
+            {/* Contact Form */}
+            <div className="md:col-span-3">
+              <form
+                action="https://formspree.io/f/xgopwkok"
+                method="POST"
+                className="space-y-6"
+              >
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-[#4B2E2B] dark:text-[#DFD0B8] mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] placeholder:text-[#8C5A3C]/50 dark:placeholder:text-[#948979]/50 focus:outline-none focus:ring-2 focus:ring-[#C08552] dark:focus:ring-[#948979] transition-all"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-[#4B2E2B] dark:text-[#DFD0B8] mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] placeholder:text-[#8C5A3C]/50 dark:placeholder:text-[#948979]/50 focus:outline-none focus:ring-2 focus:ring-[#C08552] dark:focus:ring-[#948979] transition-all"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-[#4B2E2B] dark:text-[#DFD0B8] mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] placeholder:text-[#8C5A3C]/50 dark:placeholder:text-[#948979]/50 focus:outline-none focus:ring-2 focus:ring-[#C08552] dark:focus:ring-[#948979] transition-all resize-none"
+                    placeholder="Tell me about your project..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full px-8 py-4 bg-[#4B2E2B] dark:bg-[#DFD0B8] text-[#FFF8F0] dark:text-[#222831] rounded-full font-medium hover:opacity-90 transition-all hover:scale-105 text-lg"
+                >
+                  Send message
+                </button>
+              </form>
+            </div>
+
+            {/* Social Links */}
+            <div className="md:col-span-2 flex flex-col justify-center space-y-4">
+              <p className="text-sm font-medium text-[#8C5A3C] dark:text-[#948979] mb-4">Or connect via</p>
+              {[
+                { name: "LinkedIn", href: "https://linkedin.com/in/tharsansenthivel", icon: "in" },
+                { name: "GitHub", href: "https://github.com/thad75", icon: "gh" }
+              ].map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] hover:border-[#8C5A3C] dark:hover:border-[#948979] hover:shadow-lg transition-all hover:scale-105"
+                >
+                  <span className="text-lg font-semibold">{social.name}</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
