@@ -304,6 +304,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
+                title: "Conseil de l'IA",
+                description: "AI-powered betting advisor for PMU PLAY that analyzes race conditions (weather, track length, odds) to recommend favorites, challengers, and outsiders for beginner bettors. Explains reasoning and suggests winning bets.",
+                tags: ["Generative AI", "PMU PLAY", "LLM", "Product"]
+              },
+              {
+                title: "ComPariDoc",
+                description: "Multi-agent AI document comparison platform for complex documents (CVs vs job descriptions, contracts, legal documents). Domain-specific agents (legal, HR, compliance) with orchestrator to prevent hallucinations and ensure accuracy.",
+                tags: ["Agentic AI", "RAG", "Multi-Agent", "Enterprise", "Innovation"]
+              },
+              {
                 title: "LLM-Powered Analytics Platform",
                 description: "Built an enterprise analytics platform using Large Language Models to extract insights and provide actionable intelligence for business decision-making.",
                 tags: ["LLMs", "Python", "Transformers", "FastAPI", "AWS"]
@@ -312,16 +322,6 @@ export default function Home() {
                 title: "Computer Vision Quality System",
                 description: "Developed a real-time computer vision system for automated quality control, leveraging deep learning for object detection and classification.",
                 tags: ["Computer Vision", "YOLO", "PyTorch", "OpenCV", "Edge AI"]
-              },
-              {
-                title: "AI Transformation Strategy",
-                description: "Led the strategic AI transformation initiative, democratizing AI usage across all organizational levels and establishing sustainable growth frameworks.",
-                tags: ["AI Strategy", "Leadership", "MLOps", "Architecture"]
-              },
-              {
-                title: "Innovation Pipeline",
-                description: "Created an end-to-end pipeline for AI innovation, from research ideation to production deployment, ensuring ROI-focused technology adoption.",
-                tags: ["Innovation", "Product", "Kubernetes", "MLflow", "CI/CD"]
               }
             ].map((project, i) => (
               <div key={i} className="p-8 rounded-2xl bg-[#FFF8F0] dark:bg-[#222831] border border-[#C08552] dark:border-[#393E46] hover:border-[#8C5A3C] dark:hover:border-[#948979] hover:shadow-lg transition-all hover:scale-[1.02]">
