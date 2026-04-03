@@ -7,6 +7,16 @@ export default function Home() {
   const linkedInPosts = [
     {
       id: 1,
+      date: "April 2026",
+      title: "AWS Summit Paris: Visit PMU at Public Sector",
+      excerpt: "Au Amazon Web Services (AWS) Summit ? Passez voir le PMU au niveau 2, Public Sector. On a des trucs cools sur le stand ✌️",
+      likes: "63",
+      comments: "0",
+      reposts: null,
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7445040294342885377/"
+    },
+    {
+      id: 2,
       date: "March 2026",
       title: "Google Gemini at Work: From Curiosity to Performance Engine",
       excerpt: "Attended Google Gemini at Work and discovered how Gemini enables moving from curiosity to a true performance engine. Highlights include the 'Speech-to-Speech' keynote demo with near-real-time information capture and R&D acceleration capabilities.",
@@ -14,16 +24,6 @@ export default function Home() {
       comments: "1",
       reposts: null,
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7440702431899963392/"
-    },
-    {
-      id: 2,
-      date: "December 2024",
-      title: "AI R&D Internships at PMU: Computer Vision & LLMs",
-      excerpt: "Hiring 2 talented interns (M1, M2, PhD) for cutting-edge R&D projects: AI-powered equine evaluation optimization and scene analysis. Join us in shaping the future of horse racing with AI!",
-      likes: "63",
-      comments: "1",
-      reposts: "13",
-      link: "https://linkedin.com/in/tharsansenthivel"
     },
     {
       id: 3,
