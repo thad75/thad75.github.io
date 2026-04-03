@@ -180,6 +180,14 @@ export default function Home() {
               <a href="#posts" className="text-[#8C5A3C] hover:text-[#4B2E2B] dark:text-[#948979] dark:hover:text-[#DFD0B8] transition-colors">Posts</a>
               <a href="#blog" className="text-[#8C5A3C] hover:text-[#4B2E2B] dark:text-[#948979] dark:hover:text-[#DFD0B8] transition-colors">Blog</a>
               <a href="#contact" className="text-[#8C5A3C] hover:text-[#4B2E2B] dark:text-[#948979] dark:hover:text-[#DFD0B8] transition-colors">Contact</a>
+              <a
+                href="https://calendly.com/tharsan-senthivel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-[#C08552] dark:bg-[#DFD0B8] text-[#FFF8F0] dark:text-[#222831] rounded-full font-medium hover:opacity-90 transition-all hover:scale-105"
+              >
+                Book a meeting
+              </a>
             </div>
             <ThemeToggle />
           </div>
@@ -202,10 +210,18 @@ export default function Home() {
             Transforming organizations through strategic AI leadership. Building world-class AI teams,
             delivering measurable business outcomes, and shaping the future of enterprise AI.
           </p>
-          <div className="flex gap-4 justify-center animate-fade-up" style={{animationDelay: '0.4s'}}>
+          <div className="flex gap-4 justify-center animate-fade-up flex-wrap" style={{animationDelay: '0.4s'}}>
+            <a
+              href="https://calendly.com/tharsan-senthivel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-gradient-to-r from-[#C08552] to-[#8C5A3C] dark:from-[#DFD0B8] dark:to-[#948979] text-[#FFF8F0] dark:text-[#222831] rounded-full font-medium hover:opacity-90 transition-all hover:scale-105"
+            >
+              Book a meeting
+            </a>
             <a
               href="#contact"
-              className="px-8 py-3 bg-[#4B2E2B] dark:bg-[#DFD0B8] text-[#FFF8F0] dark:text-[#222831] rounded-full font-medium hover:opacity-90 transition-all hover:scale-105"
+              className="px-8 py-3 border border-[#C08552] dark:border-[#393E46] text-[#4B2E2B] dark:text-[#DFD0B8] rounded-full font-medium hover:bg-[#FFF8F0] dark:hover:bg-[#222831] transition-all hover:scale-105"
             >
               Get in touch
             </a>
@@ -677,9 +693,22 @@ export default function Home() {
               </form>
             </div>
 
-            {/* Social Links */}
+            {/* Social Links & Booking */}
             <div className="md:col-span-2 flex flex-col justify-center space-y-4">
-              <p className="text-sm font-medium text-[#8C5A3C] dark:text-[#948979] mb-4">Or connect via</p>
+              <p className="text-sm font-medium text-[#8C5A3C] dark:text-[#948979] mb-4">Quick connect</p>
+              <a
+                href="https://calendly.com/tharsan-senthivel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-[#C08552] to-[#8C5A3C] dark:from-[#DFD0B8] dark:to-[#948979] text-[#FFF8F0] dark:text-[#222831] font-semibold hover:opacity-90 hover:shadow-lg hover:shadow-[#C08552]/20 transition-all hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Book a meeting
+              </a>
+
+              <p className="text-sm font-medium text-[#8C5A3C] dark:text-[#948979] mt-4 mb-2">Or connect via</p>
               {[
                 { name: "LinkedIn", href: "https://linkedin.com/in/tharsansenthivel", icon: "in" },
                 { name: "GitHub", href: "https://github.com/thad75", icon: "gh" }
