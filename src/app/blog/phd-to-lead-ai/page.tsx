@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "From PhD to Lead AI: My Journey | Tharsan Senthivel, PhD",
@@ -17,36 +18,28 @@ export const metadata: Metadata = {
 
 export default function BlogPost() {
   return (
-    <article className="min-h-screen bg-[#FFF8F0] dark:bg-[#222831]">
-      {/* Header */}
-      <header className="bg-[#FFF8F0] dark:bg-[#222831] border-b border-[#C08552] dark:border-[#393E46]">
-        <div className="max-w-3xl mx-auto px-6 py-8">
-          <Link
-            href="/"
-            className="inline-flex items-center text-[#8C5A3C] dark:text-[#948979] hover:text-[#4B2E2B] dark:hover:text-[#DFD0B8] transition-colors mb-8"
-          >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Home
-          </Link>
+    <>
+      <Navigation />
+      <article className="min-h-screen bg-[#FFF8F0] dark:bg-[#222831] pt-24">
+        {/* Article Header */}
+        <header className="bg-[#FFF8F0] dark:bg-[#222831]">
+          <div className="max-w-3xl mx-auto px-6 py-8">
+            <div className="text-sm text-[#8C5A3C] dark:text-[#948979] mb-4">
+              December 2024 · 5 min read
+            </div>
 
-          <div className="text-sm text-[#8C5A3C] dark:text-[#948979] mb-4">
-            December 2024 · 5 min read
+            <h1 className="text-4xl md:text-5xl font-bold text-[#4B2E2B] dark:text-[#DFD0B8] mb-6">
+              From PhD to Lead AI: My Journey
+            </h1>
+
+            <p className="text-xl text-[#8C5A3C] dark:text-[#948979]">
+              Reflections on transitioning from academic research to leading AI initiatives in a major French enterprise
+            </p>
           </div>
+        </header>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-[#4B2E2B] dark:text-[#DFD0B8] mb-6">
-            From PhD to Lead AI: My Journey
-          </h1>
-
-          <p className="text-xl text-[#8C5A3C] dark:text-[#948979]">
-            Reflections on transitioning from academic research to leading AI initiatives in a major French enterprise
-          </p>
-        </div>
-      </header>
-
-      {/* Content */}
-      <main className="max-w-3xl mx-auto px-6 py-12">
+        {/* Content */}
+        <main className="max-w-3xl mx-auto px-6 py-12">
         <div className="prose prose-lg dark:prose-invert max-w-none">
           {/* Introduction */}
           <section className="mb-12">
@@ -302,5 +295,6 @@ export default function BlogPost() {
         </div>
       </footer>
     </article>
+    </>
   );
 }
