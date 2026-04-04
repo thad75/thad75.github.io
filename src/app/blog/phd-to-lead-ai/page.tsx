@@ -284,40 +284,6 @@ export default function BlogPost() {
               this leap. And I wouldn't have it any other way.
             </p>
           </section>
-
-          {/* Author Bio */}
-          <section className="mt-16 p-8 rounded-2xl bg-[#FFF8F0] dark:bg-[#393E46] border border-[#C08552] dark:border-[#393E46]">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-full bg-[#C08552] flex items-center justify-center text-[#FFF8F0] text-2xl font-bold">
-                  TS
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-[#4B2E2B] dark:text-[#DFD0B8] mb-2">
-                  About the Author
-                </h3>
-                <p className="text-[#8C5A3C] dark:text-[#948979] mb-3">
-                  <strong>Tharsan Senthivel, PhD</strong> is Lead AI at PMU (Paris), specializing in AI transformation
-                  and enterprise AI strategy. He completed his PhD in Artificial Intelligence at CY Cergy Université,
-                  focusing on Detection Transformers with publications at ICIP and ACCV, including a Best Student Paper
-                  Award at ACCV 2024. He bridges the gap between cutting-edge research and practical AI applications
-                  in enterprise settings.
-                </p>
-                <Link
-                  href="https://linkedin.com/in/tharsansenthivel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-[#C08552] hover:text-[#8C5A3C] dark:hover:text-[#948979] transition-colors"
-                >
-                  Connect on LinkedIn
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
 
