@@ -99,7 +99,7 @@ export default function RootLayout({
               },
               "alumniOf": {
                 "@type": "CollegeOrUniversity",
-                "name": "Université Paris-Saclay"
+                "name": "CY Cergy Université"
               },
               "description": "AI Executive driving enterprise transformation. Lead AI at PMU, PhD in Artificial Intelligence, published researcher in Detection Transformers and Computer Vision.",
               "url": "https://thad75.github.io",
@@ -305,7 +305,7 @@ export default function RootLayout({
                   "name": "What is Tharsan Senthivel's educational background?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Tharsan Senthivel holds a PhD in Artificial Intelligence from Université Paris-Saclay, with focus on Detection Transformers and Object Detection. He also received the Best Student Paper Award at ACCV 2024."
+                    "text": "Tharsan Senthivel holds a PhD in Artificial Intelligence from CY Cergy Université, with focus on Detection Transformers and Object Detection. He also received the Best Student Paper Award at ACCV 2024."
                   }
                 },
                 {

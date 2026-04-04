@@ -139,7 +139,7 @@ export default function Home() {
     {
       id: 3,
       title: "PhD in Artificial Intelligence",
-      organization: "Université Paris-Saclay",
+      organization: "CY Cergy Université",
       year: "2023",
       description: "Doctorate in AI with focus on Detection Transformers and Object Detection"
     }
