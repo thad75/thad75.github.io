@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { MediumArticles } from "@/components/MediumArticles";
 
 export default function Home() {
   // UPDATE YOUR LINKEDIN POSTS HERE
@@ -571,6 +572,11 @@ export default function Home() {
                 </a>
               </article>
             ))}
+          </div>
+
+          {/* Medium Articles */}
+          <div className="mt-16 pt-12 border-t border-[#C08552]/30 dark:border-[#393E46]">
+            <MediumArticles />
           </div>
         </div>
       </section>
