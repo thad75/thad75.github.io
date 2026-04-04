@@ -153,7 +153,7 @@ export default function Home() {
       title: "From PhD to Lead AI: My Journey",
       excerpt: "Reflections on transitioning from academic research to leading AI initiatives in a major French enterprise...",
       readTime: "5 min read",
-      link: "#"
+      link: "/blog/phd-to-lead-ai"
     },
     {
       id: 2,
